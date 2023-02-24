@@ -6,18 +6,13 @@ let count = 0;
 input.value = count;
 
 increase.addEventListener("click", function () {
-    count++;
+    count = count + 1;
     input.value = count;
     console.log(count);
 });
 
 decrease.addEventListener("click", function () {
-    if (count > 0) {
-        count--;
+    count = count - 1;
         input.value = count;
         console.log(count);
-    }
-    else {
-        input.value = "0"
-    }
-})
+});
